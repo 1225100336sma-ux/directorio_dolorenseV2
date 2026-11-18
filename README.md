@@ -65,6 +65,40 @@ flutter test --reporter expanded
 ```
 
 ---
+## Evidencia de TDD (ciclo Rojo → Verde por ronda)
+
+En cada ronda se escribe primero la prueba, se ve fallar (rojo), se implementa lo mínimo para que pase (verde) y después se mejora el código.
+
+### Ronda 1: Modelo Negocio
+**Rojo:** la prueba falla porque aún no existe `negocio.dart`.
+
+![Ronda 1 rojo](app/capturas/ronda1_rojo.png)
+
+**Verde:** con `negocio.dart` implementado, la prueba pasa.
+
+![Ronda 1 verde](app/capturas/ronda1_verde.png)
+
+### Ronda 2: Cliente de la API (NegociosApi con MockClient)
+**Rojo:**
+
+![Ronda 2 rojo](app/capturas/ronda2_rojo.png)
+
+**Verde:**
+
+![Ronda 2 verde](app/capturas/ronda2_verde.png)
+
+### Ronda 3: NegociosViewModel (5 estados)
+**Rojo:**
+
+![Ronda 3 rojo](app/capturas/ronda3_rojo.png)
+
+**Verde:**
+
+![Ronda 3 verde](app/capturas/ronda3_verde.png)
+
+### Resultado final: todas las pruebas pasando
+![Todas las pruebas](app/capturas/final_todas_verde.png)
+
 
 ## Evidencias
 
